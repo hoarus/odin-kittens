@@ -11,6 +11,7 @@
 
   <tbody>
     <% @kittens.each do |kitten| %>
+      <h3><%= kitten.name %></h3>
       <tr>
         <td><%= link_to 'Show', kitten %></td>
         <td><%= link_to 'Edit', edit_kitten_path(kitten) %></td>
